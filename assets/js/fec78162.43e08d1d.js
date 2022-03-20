@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[843],{3628:function(s){s.exports=JSON.parse('{"allTagsPath":"/sanic-discord-docs/blog/tags","slug":"/sanic-discord-docs/blog/tags/hola","name":"hola","count":1,"permalink":"/sanic-discord-docs/blog/tags/hola"}')}}]);

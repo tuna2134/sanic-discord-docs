@@ -9,7 +9,7 @@ const config = {
   title: 'sanic-discord',
   tagline: 'Easy to use discord api.',
   url: 'https://tuna2134.github.io',
-  baseUrl: '/sanic-discord-docs',
+  baseUrl: '/sanic-discord-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

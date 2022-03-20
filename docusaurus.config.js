@@ -101,7 +101,11 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/tuna2134/sanic-discord',
+              },
+              {
+                label: 'PyPI',
+                href: "https://pypi.org/project/sanic-discord
               },
             ],
           },

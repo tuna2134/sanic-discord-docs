@@ -10,7 +10,7 @@ sidebar_position: 1
 pip install sanic-discord sanic
 ```
 
-### Example
+### For example
 
 - [Node.js](https://nodejs.org/en/download/) version 14 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.

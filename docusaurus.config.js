@@ -105,7 +105,7 @@ const config = {
               },
               {
                 label: 'PyPI',
-                href: "https://pypi.org/project/sanic-discord
+                href: "https://pypi.org/project/sanic-discord"
               },
             ],
           },

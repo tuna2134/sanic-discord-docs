@@ -10,6 +10,12 @@ sidebar_position: 1
 pip install sanic-discord sanic
 ```
 
+or
+
+```bash
+pip install git+https://github.com/tuna2134/sanic-discord.git sanic
+```
+
 ### For example
 
 - [Node.js](https://nodejs.org/en/download/) version 14 or above:

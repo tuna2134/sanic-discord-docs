@@ -110,7 +110,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} tuna2134. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} tuna2134.`,
       },
       prism: {
         theme: lightCodeTheme,

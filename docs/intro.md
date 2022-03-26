@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ## Getting Started
 
+### install lib
+
 ```bash
 pip install sanic-discord sanic
 ```
@@ -18,8 +20,20 @@ pip install git+https://github.com/tuna2134/sanic-discord.git sanic
 
 ### For example
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+oauth2
+
+```py
+from sanic import Sanic
+from sanic import response
+
+app = Sanic("app")
+
+@app.route("/")
+async def main(request):
+    return response.text("test")
+    
+app.run(host="0.0.0.0", port=8080)
+```
 
 ## Generate a new site
 

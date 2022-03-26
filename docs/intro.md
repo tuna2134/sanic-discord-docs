@@ -25,12 +25,24 @@ oauth2
 ```py
 from sanic import Sanic
 from sanic import response
+from sanic_discord import Client
+from sanic_discord import Config
 
 app = Sanic("app")
+client = Client(Config(secret="", id="", login_url="", callback_url="", redirect_url="/me"))
 
 @app.route("/")
 async def main(request):
     return response.text("test")
+    
+@app.route("/callback")
+async def callback(request):
+    return await client.callback(request)
+    
+@app.route("/me")
+@client.oauth2_require()
+async def me(request, user):
+    return response.text(user["username"])
     
 app.run(host="0.0.0.0", port=8080)
 ```

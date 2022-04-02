@@ -47,6 +47,11 @@ async def me(request, user):
 app.run(host="0.0.0.0", port=8080)
 ```
 
+interaction
+
+```python
+```
+
 ## Generate a new site
 
 Generate a new Docusaurus site using the **classic template**.

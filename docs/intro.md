@@ -50,6 +50,31 @@ app.run(host="0.0.0.0", port=8080)
 interaction
 
 ```python
+from sanic_discord import Bot
+from sanic import app, response
+
+app = Sanic("app")
+bot = Bot(app, "TOKEN", "PABLICKEY")
+
+@app.route("/")
+async def main(request):
+    return response.text("hello world")
+    
+@app.before_server_start
+async def setupbot(_, loop):
+    await bot.start(loop)
+    
+@app.signal("http.lifecycle.complete")
+async def complete(conn_info):
+    await bot.if_finish(conn_info)
+    
+@app.route("/interaction")
+async def interaction(request):
+    return await bot.interaction(request)
+    
+@bot.slash_command("ping", "Ping message")
+async def ping(interaction):
+    return interaction.send("Pong!")
 ```
 
 ## Generate a new site
